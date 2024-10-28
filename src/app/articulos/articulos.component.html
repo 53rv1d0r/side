@@ -1,0 +1,8 @@
+<div class="articulos-container">
+    <div *ngFor="let articulo of articulos" class="articulo-card">
+      <img [src]="articulo.imagen" alt="{{ articulo.titulo }}">
+      <h3>{{ articulo.titulo }}</h3>
+      <p>{{ articulo.descripcion }}</p>
+    </div>
+  </div>
+  

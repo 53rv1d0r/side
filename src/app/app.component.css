@@ -1,0 +1,91 @@
+.sidebar {
+  width: 210px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: width 0.3s;
+  border-right: 1px solid #ddd;
+  background-color: #302634;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+/* Estilos para el logo y el botón de menú */
+.headernav {
+  cursor: pointer;
+  color: #FFF;
+}
+
+.logo {
+  max-width: 95px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.closed .logo {
+  display: none; /* Ocultar logo cuando el menú está cerrado */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: #201923;
+}
+
+.submenu {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.submenu .nav-link {
+  font-size: 14px;
+}
+
+.active {
+  font-weight: bold;
+  color: #19b59f;
+}
+
+.toggle-button {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+.info1,footer {
+  text-align: center;
+}
+/*text*/
+
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.info-column {
+  flex: 1;
+  padding: 10px;
+}
+
+.info-column:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.text-center {
+  text-align: center;
+}
+
+      
